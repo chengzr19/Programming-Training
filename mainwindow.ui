@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="Base">
+   <widget class="QLabel" name="Background">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>540</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources.qrc">:/Board/png/Background.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ChessBoard">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>360</width>
+      <height>510</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources.qrc">:/Board/png/Board.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="activePlayer">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>94</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="timeLeft">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>205</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="intValue" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="totalStep">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>168</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="timeoutTimes">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>131</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_0">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>57</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>94</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>131</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>168</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>205</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>357</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>394</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>431</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_10">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>468</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>505</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_12">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>20</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_13">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>57</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_14">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>131</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_15">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>205</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_16">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>320</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_17">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>394</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_18">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>468</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_19">
+    <property name="geometry">
+     <rect>
+      <x>97</x>
+      <y>505</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_20">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>394</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_21">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>468</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_22">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>505</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_23">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>320</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_24">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>131</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_25">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>57</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_26">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>20</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_27">
+    <property name="geometry">
+     <rect>
+      <x>252</x>
+      <y>205</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_28">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>507</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_29">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_30">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>396</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_31">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>22</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_32">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>207</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_33">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>433</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_34">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>322</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_35">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>59</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_36">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>96</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_37">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>359</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_38">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>133</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_39">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>470</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_40">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>322</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_41">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>470</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_42">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>433</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_43">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>507</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_45">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>59</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_46">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>207</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_48">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>22</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_49">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>96</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_44">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>359</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Chess" name="chess_47">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>170</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="colorBrowser">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>57</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="status">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusLabel">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>20</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>STATUS</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="colorLabel">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>57</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>COLOR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="activeLabel">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>94</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>PLAYER</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeoutLabel">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>131</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>TIMEOUT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeleftLabel">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>205</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>TIMELEFT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalLabel">
+    <property name="geometry">
+     <rect>
+      <x>385</x>
+      <y>168</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>TOTAL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="chessportLabel">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>505</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="text">
+     <string>CHESS PORT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>540</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConnect">
+    <property name="title">
+     <string>Connect</string>
+    </property>
+    <addaction name="actionCreate_Connection"/>
+    <addaction name="actionConnect_to_Server"/>
+    <addaction name="actionCancel_Connection"/>
+   </widget>
+   <widget class="QMenu" name="menuPlay">
+    <property name="title">
+     <string>Play</string>
+    </property>
+    <addaction name="actionStart"/>
+    <addaction name="actionSurrender"/>
+   </widget>
+   <addaction name="menuConnect"/>
+   <addaction name="menuPlay"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_Connection">
+   <property name="text">
+    <string>Create Connection</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_Server">
+   <property name="text">
+    <string>Connect to Server</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionSurrender">
+   <property name="text">
+    <string>Surrender</string>
+   </property>
+  </action>
+  <action name="actionCancel_Connection">
+   <property name="text">
+    <string>Cancel Connection</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Chess</class>
+   <extends>QLabel</extends>
+   <header location="global">chess.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

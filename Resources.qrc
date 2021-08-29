@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/Chess">
+        <file>png/1B.png</file>
+        <file>png/1R.png</file>
+        <file>png/2B.png</file>
+        <file>png/2R.png</file>
+        <file>png/3B.png</file>
+        <file>png/3R.png</file>
+        <file>png/4B.png</file>
+        <file>png/4R.png</file>
+        <file>png/5B.png</file>
+        <file>png/5R.png</file>
+        <file>png/6B.png</file>
+        <file>png/6R.png</file>
+        <file>png/7B.png</file>
+        <file>png/7R.png</file>
+        <file>png/8B.png</file>
+        <file>png/8R.png</file>
+        <file>png/9B.png</file>
+        <file>png/9R.png</file>
+        <file>png/10B.png</file>
+        <file>png/10R.png</file>
+        <file>png/11B.png</file>
+        <file>png/11R.png</file>
+        <file>png/12B.png</file>
+        <file>png/12R.png</file>
+    </qresource>
+    <qresource prefix="/Board">
+        <file>png/Background.jpg</file>
+        <file>png/Board.png</file>
+        <file>png/Chess.png</file>
+        <file>png/EmptyBoard.png</file>
+        <file>png/EmptyCamp.png</file>
+        <file>png/EmptyChess.png</file>
+    </qresource>
+</RCC>
